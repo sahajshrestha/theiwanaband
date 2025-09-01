@@ -1,6 +1,13 @@
 const Events = () => {
   return (
-    <div style={{ padding: "2rem" }}>
+    <div
+      style={{
+        padding: '2rem',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
       <h2>Upcoming Shows</h2>
       <ul>
         <li>September 10, 2025 - Downtown Music Fest</li>

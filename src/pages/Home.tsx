@@ -7,6 +7,9 @@ const Home = () => {
         minHeight: '100vh',
         position: 'relative',
         overflow: 'hidden',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
       }}
     >
       {/* Background image with transparency */}
@@ -22,6 +25,9 @@ const Home = () => {
           backgroundPosition: 'center',
           opacity: 0.9,
           zIndex: 0,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
         }}
       />
       {/* Content above background */}
@@ -39,6 +45,8 @@ const Home = () => {
             opacity: 0.7,
             borderRadius: '25rem',
             marginLeft: '60rem',
+            flexDirection: 'column',
+            alignItems: 'center',
           }}
         />
       </div>

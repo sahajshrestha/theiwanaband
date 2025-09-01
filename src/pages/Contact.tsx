@@ -1,6 +1,13 @@
 const Contact = () => {
   return (
-    <div style={{ padding: '2rem' }}>
+    <div
+      style={{
+        padding: '2rem',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
       <h2>Contact Us</h2>
       <p>
         Instagram:{' '}

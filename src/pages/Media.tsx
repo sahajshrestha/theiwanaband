@@ -1,6 +1,13 @@
 const Media = () => {
   return (
-    <div style={{ padding: '2rem' }}>
+    <div
+      style={{
+        padding: '2rem',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+      }}
+    >
       <h2>Rehearsal Videos</h2>
       <h3>Move Along </h3>
       <video controls style={{ maxWidth: '600px' }}>
