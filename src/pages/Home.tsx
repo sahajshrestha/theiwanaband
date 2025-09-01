@@ -7,9 +7,6 @@ const Home = () => {
         minHeight: '100vh',
         position: 'relative',
         overflow: 'hidden',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
       }}
     >
       {/* Background image with transparency */}
@@ -23,15 +20,12 @@ const Home = () => {
           backgroundImage: "url('/assets/iwana.jpg')",
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: 0.9,
+          opacity: 0.7,
           zIndex: 0,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
         }}
       />
       {/* Content above background */}
-      <div style={{ position: 'relative', zIndex: 1 }}>
+      <div style={{ position: 'relative', zIndex: 1, width: '100%' }}>
         <h1>Welcome to the World of Iwana</h1>
         <p>
           We might have something for your tympanum! Check out our latest videos
@@ -41,12 +35,14 @@ const Home = () => {
           src="/assets/bandpic.jpg"
           alt="Band"
           style={{
-            maxWidth: '30%',
-            opacity: 0.7,
-            borderRadius: '25rem',
-            marginLeft: '60rem',
-            flexDirection: 'column',
-            alignItems: 'center',
+            maxWidth: '400px', // limits image size on desktop
+            width: '90vw', // fills most of mobile screen
+            height: 'auto',
+            opacity: 0.8,
+            borderRadius: '2rem',
+            marginLeft: '0',
+            marginTop: '1rem',
+            boxShadow: '0 4px 16px rgba(0,0,0,0.2)',
           }}
         />
       </div>
